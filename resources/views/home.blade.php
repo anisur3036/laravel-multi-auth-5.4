@@ -9,7 +9,7 @@
 
                 <div class="panel-body">
                     @component('components.who')
-                   @endcomponent
+                    @endcomponent
                 </div>
             </div>
         </div>

@@ -32,8 +32,8 @@ class AdminLoginController extends Controller
 			//if successful, then redirect to their intended location
 			return redirect()->intended(route('admin.dashboard'));
     	}
-    	//if unsuccessful, then redirect back to the login with the data
     	return redirect()->back()->withInput($request->only('email', 'remember'));
+        //if unsuccessful, then redirect back to the login with the data
     }
 
     public function logout()
